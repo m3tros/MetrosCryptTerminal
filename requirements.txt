@@ -1,0 +1,4 @@
+pyfiglet
+cryptocode
+colorama
+prompt_toolkit
