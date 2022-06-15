@@ -32,6 +32,7 @@ pip3 install -r requirements.txt
 python3 MetrosCryptTerminal.py
 ```
 ## Usage
+### help
 ```
 Usage:  [command] <options>
 
