@@ -18,6 +18,11 @@ In executable files, the program is exclusively in English with   without the po
 
 - To output the help of a specific command, type `help` and `command`.
 
+## Other versions of the program
+- <a href="https://github.com/John-MetrosSoftware/MetrosCrypt">MetrosCrypt</a>
+- <a href="https://github.com/John-MetrosSoftware/MetrosCryptTerminal">MetrosCryptTerminal</a> (Current)
+- <a href="https://github.com/John-MetrosSoftware/MetrosCryptTerminalGUI">MetrosCryptTerminalGUI</a> 
+
 ## Installation for python3
 ### Libraries
 - <a href="https://pypi.org/project/pyfiglet/0.7/">pyfiglet</a>
