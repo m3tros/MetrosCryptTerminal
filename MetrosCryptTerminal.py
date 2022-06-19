@@ -3,6 +3,7 @@ import sys
 import shlex
 import pyfiglet
 import cryptocode
+import colorama
 from prompt_toolkit import prompt
 from prompt_toolkit import PromptSession
 from prompt_toolkit.auto_suggest import AutoSuggestFromHistory
@@ -12,6 +13,7 @@ from prompt_toolkit.styles import Style
 from prompt_toolkit.cursor_shapes import CursorShape
 from colorama import Fore
 
+colorama.init()
 
 command_list = WordCompleter(['cd', 'clean', 'clear', 'cls', 'decrypt', 'echo', 'echo off', 'echo on',
                              'encrypt', 'exit', 'help', 'ls', 'print', 'print_decrypt', 'print_encrypt', 'pwd', 'quit', 'system'])
