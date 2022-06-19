@@ -122,7 +122,7 @@ class Main:
         elif str(self.command_input_split[0]).lower() == 'exit' or str(self.command_input_split[0]).lower() == 'quit':
             self.start_program = False
         elif str(self.command_input_split[0]).lower() == 'cls' or str(self.command_input_split[0]).lower() == 'clear' or str(self.command_input_split[0]).lower() == 'clean':
-            os.system('clear')
+            os.system('cls || clear')
         elif str(self.command_input_split[0]).lower() == 'encrypt':
             if str(self.command_input_split[-1]) == 'encrypt':
                 no_parameters('encrypt', 'file')
@@ -267,7 +267,7 @@ class Main:
 
 
 def boot():
-    os.system('clear')
+    os.system('cls || clear')
     print(Fore.BLUE+pyfiglet.figlet_format('MetrosCrypt')+Fore.WHITE)
     message('MetrosCrypt Terminal [version 1.0] 2022.')
     message('Github: https://github.com/John-MetrosSoftware/MetrosCryptTerminal')
