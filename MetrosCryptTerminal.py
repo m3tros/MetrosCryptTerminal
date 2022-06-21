@@ -234,6 +234,7 @@ class Main:
                     errors(
                         'Apparently it was not possible to encrypt the file ({}).'.format(file_name))
                     return
+                print('\033c')
                 print(result_file+'\n'+'_'*50 +
                       '\nEncrypt file: {}'.format(file_name))
             else:
@@ -252,6 +253,7 @@ class Main:
                 if result_file == False:
                     errors('Password is incorrect...')
                     return
+                print('\033c')
                 print(result_file+'\n'+'_'*50 +
                       '\nDecrypt file: {}'.format(file_name))
             else:
