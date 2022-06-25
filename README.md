@@ -284,9 +284,6 @@ Completed successfully! The file (<file>) was decrypted.
 This version 1.0 is a version without saving any settings or changing them.<br>
 All software is provided in English with executable files, these parameters cannot be changed.<br>
 I usually compile my projects using the <a href="https://pypi.org/project/pyinstaller/">pyinstaller</a> compiler with the following parameters:
-This version 1.0 is a version without saving any settings or changing them.<br>
-All software is provided in English with executable files, these parameters cannot be changed.<br>
-I usually compile my projects using the <a href="https://pypi.org/project/pyinstaller/">pyinstaller</a> compiler with the following parameters:
 ```
 pyinstaller -F MetrosCryptTerminal.py
 ```
