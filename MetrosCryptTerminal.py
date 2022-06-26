@@ -284,4 +284,4 @@ if __name__ == '__main__':
     try:
         boot()
     except Exception as error:
-        errors('Unknown error:'+error)
+        errors('Unknown error: {}'.format(str(error)))
