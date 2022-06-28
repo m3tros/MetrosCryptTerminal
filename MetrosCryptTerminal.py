@@ -13,39 +13,50 @@ from prompt_toolkit.styles import Style
 from prompt_toolkit.cursor_shapes import CursorShape
 from colorama import Fore
 
+__version__ = 1.0
+
+# Colorama initialization is necessary to prevent color output errors specifically in windows and possibly in other operating systems.
+os.system('cls || clear')
 colorama.init()
 
+# Autocomplete list in input line.
 command_list = WordCompleter(['cd', 'clean', 'clear', 'cls', 'decrypt', 'echo', 'echo off', 'echo on',
                              'encrypt', 'exit', 'help', 'ls', 'print', 'print_decrypt', 'print_encrypt', 'pwd', 'quit', 'system'])
 
-
+# Displaying a normal message on the screen. The [*] sign is blue.
 def message(text):
     print('{}[*]{} {}'.format(Fore.BLUE, Fore.WHITE, text))
 
-
+# Displaying an error on the screen. The [!] sign is red.
 def errors(text):
     print('{}[!]{} {}'.format(Fore.RED, Fore.WHITE, text))
 
-
+# A function for outputting a specific error of lack of parameters for command execution.
 def no_parameters(command, parameter):
     message(
         f'To execute the \'{command}\' command, a parameter is required \'{parameter}\'.')
 
-
 class Main:
+    '''
+    The main class of the program. This is where commands are entered and processed.
+    Class Functions:
+        __init__  - The start of the program cycle is controlled by the start_program variable.
+        init      - Entering program parameters.
+        command   - Processing user-entered parameters.
+    '''
 
     start_program = True
     session = PromptSession()
-    prompt_text = HTML(
-        '\n<font color="#00bfff">[MetrosCrypt Terminal]</font> <b>{}</b><font color="#00bfff">$</font> '.format(os.getcwd()))
+    prompt_text = HTML('\n<font color="#00bfff">[MetrosCrypt Terminal]</font> <b>{}</b><font color="#00bfff">$</font> '.format(os.getcwd()))
     temp_prompt = prompt_text
-
+    
+    # Entering program parameters.
     def __init__(self):
         super().__init__()
-
         while self.start_program == True:
             self.init()
-
+    
+    # Function initialization of parameter input.
     def init(self):
         try:
             self.command_input = self.session.prompt(
@@ -65,7 +76,8 @@ class Main:
             self.start_program = False
         except EOFError:
             pass
-
+          
+    # Processing input parameters.
     def command(self):
         if str(self.command_input_split[0]).lower() == 'help':
             if str(self.command_input_split[-1]) == 'help':
@@ -269,11 +281,10 @@ class Main:
             print('Unknown command: '+self.command_input)
             return
 
-
+# Processing input parameters.
 def boot():
-    os.system('cls || clear')
     print(Fore.BLUE+pyfiglet.figlet_format('MetrosCrypt')+Fore.WHITE)
-    message('MetrosCrypt Terminal [version 1.0] 2022.')
+    message('MetrosCrypt Terminal [version {}] 2022.'.format(__version__))
     message('Github: https://github.com/John-MetrosSoftware/MetrosCryptTerminal')
     Main()
     print('')
