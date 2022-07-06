@@ -8,7 +8,7 @@
 ## Description
 MetrosCryptTerminal is for file encryption/decryption based on the <a href="https://pypi.org/project/cryptocode/">cryptocode</a> algorithm.<br>
 It is written in <a href="https://python.org">Python</a> <a href="https://www.python.org/downloads/release/python-3104/">3.10.4</a> 
-The program is distributed in forms as an open source python file and an executable file for Linux and Windows.<br>
+The program is distributed in forms as an open source python file.<br>
 
 
 <p align="center"> 
@@ -281,7 +281,7 @@ Completed successfully! The file (<file>) was decrypted.
 ```
 
 ## Compilation
-This version 1.0 is a version without saving any settings or changing them.<br>
+This version `1.0` is a version without saving any settings or changing them.<br>
 All software is provided in English with executable files, these parameters cannot be changed.<br>
 I usually compile my projects using the <a href="https://pypi.org/project/pyinstaller/">pyinstaller</a> compiler with the following parameters:
 ```
