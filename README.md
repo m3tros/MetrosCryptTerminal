@@ -3,7 +3,7 @@
 <p align="center"> 
   <img src="https://user-images.githubusercontent.com/107058068/172821950-664bb083-8a47-4a26-b43d-e61551716b01.png" alt="MetrosCryptTerminal" width="80px" height="80px">
 </p>
-<h1 align="center">MetrosCryptTerminal</h1>
+<h1 align="center">Metros Crypt Terminal</h1>
 
 ## Description
 MetrosCryptTerminal is for file encryption/decryption based on the <a href="https://pypi.org/project/cryptocode/">cryptocode</a> algorithm.<br>
